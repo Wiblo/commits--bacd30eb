@@ -21,21 +21,8 @@ export default function Home() {
 
     document.addEventListener('click', handleClick);
 
-    // Parallax effect
-    const handleScroll = () => {
-      if (heroRef.current) {
-        const scrollY = window.scrollY;
-        if (scrollY < heroRef.current.offsetHeight) {
-          heroRef.current.style.transform = `translateY(${scrollY * 0.5}px)`;
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
     return () => {
       document.removeEventListener('click', handleClick);
-      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
