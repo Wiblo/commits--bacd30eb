@@ -34,7 +34,7 @@ export default function Home() {
           <div className="nav">
             <div className="logo">
               <span className="logo-icon">⚡</span>
-              <span className="logo-text">BuildAI</span>
+              <span className="logo-text">FetchBuildAI</span>
             </div>
             <nav className="nav-links">
               <a href="#features" className="nav-link">Features</a>
